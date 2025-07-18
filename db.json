@@ -1,0 +1,58 @@
+{
+  "goals": [
+    {
+      "id": "1",
+      "name": "Travel Fund - Japan",
+      "targetAmount": 5000,
+      "savedAmount": 3200,
+      "category": "Travel",
+      "deadline": "2025-12-31",
+      "createdAt": "2024-01-15"
+    },
+    {
+      "id": "2",
+      "name": "Emergency Fund",
+      "targetAmount": 10000,
+      "savedAmount": 7500,
+      "category": "Emergency",
+      "deadline": "2026-06-30",
+      "createdAt": "2023-05-01"
+    },
+    {
+      "id": "3",
+      "name": "New Laptop",
+      "targetAmount": 1500,
+      "savedAmount": 1500,
+      "category": "Electronics",
+      "deadline": "2024-07-20",
+      "createdAt": "2024-03-10"
+    },
+    {
+      "id": "4",
+      "name": "Down Payment - House",
+      "targetAmount": 50000,
+      "savedAmount": 12000,
+      "category": "Real Estate",
+      "deadline": "2027-12-31",
+      "createdAt": "2024-02-01"
+    },
+    {
+      "id": "5",
+      "name": "Car Maintenance",
+      "targetAmount": 800,
+      "savedAmount": 600,
+      "category": "Vehicle",
+      "deadline": "2025-09-15",
+      "createdAt": "2024-06-01"
+    },
+    {
+      "id": "6",
+      "name": "Education Fund",
+      "targetAmount": 20000,
+      "savedAmount": 5000,
+      "category": "Education",
+      "deadline": "2028-01-01",
+      "createdAt": "2024-04-20"
+    }
+  ]
+}
