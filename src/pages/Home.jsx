@@ -46,7 +46,21 @@ function Home() {
         console.error("Error updating savings:", error);
     });
     }
-   
+
+   function handleDelteGoal(event){
+    event.preventDefault();
+    const confirmMessage = confirm("Are you sure you want to delete this goal?") 
+    if (!confirmMessage) return;
+
+    const goalId = event.target.id;
+    fetch(`http://localhost:3001/goals/${goalId}`,{
+      method: "DELETE",
+    }).then(()=>{
+      const updatedGoals= goals.filter((goal)=> goal.id !== goalId);
+      setGoals(updatedGoals);
+    }).catch((error)=> console.error("Error deleteing goal :", error))
+   }
+
   return (
     <div>
       <header >
@@ -54,13 +68,14 @@ function Home() {
       </header>
       <h2>Welcome to BullsEye goal-planner</h2><hr/>
       <NewSavingsForm goals={goals} onSelected={setSelectedGoal} onSavingsAdded={setSavings} onSubmitSavings={handleSubmitSavings}/> <br/> <hr/>
-        <h2>Your Goals</h2>
+        <h2 style={{textAlign:"center"}}>Your Goals</h2>
         <div className="goal-list">
             {goals.map((goal)=>(
                 <GoalItem 
                     key={goal.id} 
                     id={goal.id}
                     goal={goal} 
+                    onDelete={handleDelteGoal}
                 />
             ))}
         </div>

@@ -96,7 +96,7 @@ function TrackProgress() {
     <div style={{ width: "100%", backgroundColor: "#e0e0e0", borderRadius: "8px", marginTop: "10px" }}>
       <div
         style={{
-          width: `${calculateTimeProgress(goal.createdAt, goal.deadline)}%`,
+          width: `${calculateTimeProgress(goal.deadline,goal.createdAt)}%`,
           backgroundColor: "rgba(255, 30, 0, 0.685)",
           height: "15px",
           borderRadius: "8px",

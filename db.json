@@ -44,15 +44,6 @@
       "category": "Shopping",
       "deadline": "2025-12-10",
       "createdAt": "2024-07-01"
-    },
-    {
-      "id": "6",
-      "name": "Home Renovation",
-      "targetAmount": 60000,
-      "savedAmount": 7381,
-      "category": "Home",
-      "deadline": "2025-03-31",
-      "createdAt": "2024-05-15"
     }
   ]
 }
