@@ -6,7 +6,7 @@ import "../index.css";
 
 function Home() {
  const[goals, setGoals] = useState([]);
- const[selectedGoal, setSelectedGoal] = useState('Car Maintenance');
+ const[selectedGoal, setSelectedGoal] = useState("");
  const[savings, setSavings] = useState(0);
    
     useEffect(() => {
@@ -40,7 +40,8 @@ function Home() {
             goal.id === updatedGoal.id ? updatedGoal : goal
         );
         setGoals(updatedGoals);
-        setSavings(0);
+        setSelectedGoal(""); // Reset selected goal
+        event.target.reset();
   }).catch((error) => {
         console.error("Error updating savings:", error);
     });
