@@ -3,7 +3,7 @@ import "../index.css"
 
  function NavBar() {
    return (
-     <nav style={{ display: "flex", justifyContent: "flex-start", gap: "10px", alignItems: "center", padding: "10px", backgroundColor: "#f8f9fa" }}>
+     <nav style={{ display: "flex", justifyContent: "flex-start", gap: "10px", alignItems: "center", padding: "10px", backgroundColor: "#f8f9fa", width: "100vw" }}>
         <p><span style={{color:" rgba(255, 30, 0, 0.685)", fontWeight:"bolder"}}>Bulls</span>Eye</p>
         <NavLink to="/" className="nav-link">Home</NavLink>
         <NavLink to="/newgoal" className="nav-link">Add Goal</NavLink>

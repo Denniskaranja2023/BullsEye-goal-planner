@@ -35,6 +35,25 @@
   color: white;
 }
 
+.link{
+  background-color:rgba(255, 30, 0, 0.685);
+  font-weight: 500;
+  color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: small;
+  width: fit-content;
+  padding: 5px;
+}
+
+.goal-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+}
+
 a {
   font-weight: 500;
   color: #646cff;

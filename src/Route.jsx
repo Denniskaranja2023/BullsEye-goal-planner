@@ -7,7 +7,7 @@ import TrackProgress from "./pages/TrackProgress"
 const routes=[
     {
         path: "/",
-        element: <Home/>
+        element: <Home />
     },
      {
         path: "/newgoal",

@@ -4,7 +4,7 @@
       "id": "1",
       "name": "Travel Fund - Japan",
       "targetAmount": 5000,
-      "savedAmount": 3200,
+      "savedAmount": 10400,
       "category": "Travel",
       "deadline": "2025-12-31",
       "createdAt": "2024-01-15"
@@ -22,37 +22,37 @@
       "id": "3",
       "name": "New Laptop",
       "targetAmount": 1500,
-      "savedAmount": 1500,
+      "savedAmount": 3500,
       "category": "Electronics",
       "deadline": "2024-07-20",
       "createdAt": "2024-03-10"
     },
     {
       "id": "4",
-      "name": "Down Payment - House",
-      "targetAmount": 50000,
-      "savedAmount": 12000,
-      "category": "Real Estate",
-      "deadline": "2027-12-31",
-      "createdAt": "2024-02-01"
-    },
-    {
-      "id": "5",
       "name": "Car Maintenance",
       "targetAmount": 800,
-      "savedAmount": 600,
+      "savedAmount": 11800,
       "category": "Vehicle",
       "deadline": "2025-09-15",
       "createdAt": "2024-06-01"
     },
     {
+      "id": "5",
+      "name": "Holiday Gifts",
+      "targetAmount": 1000,
+      "savedAmount": 1289,
+      "category": "Shopping",
+      "deadline": "2024-08-10",
+      "createdAt": "2024-07-01"
+    },
+    {
       "id": "6",
-      "name": "Education Fund",
-      "targetAmount": 20000,
-      "savedAmount": 5000,
-      "category": "Education",
-      "deadline": "2028-01-01",
-      "createdAt": "2024-04-20"
+      "name": "Home Renovation",
+      "targetAmount": 7500,
+      "savedAmount": 3000,
+      "category": "Home",
+      "deadline": "2025-03-31",
+      "createdAt": "2024-05-15"
     }
   ]
 }
