@@ -66,7 +66,7 @@ function Home() {
       <header >
         <NavBar />
       </header>
-      <h2>Welcome to BullsEye goal-planner</h2><hr/>
+      <h2 style={{textAlign:"center"}}>Welcome to BullsEye goal-planner</h2><hr/>
       <NewSavingsForm goals={goals} onSelected={setSelectedGoal} onSavingsAdded={setSavings} onSubmitSavings={handleSubmitSavings}/> <br/> <hr/>
         <h2 style={{textAlign:"center"}}>Your Goals</h2>
         <div className="goal-list">
