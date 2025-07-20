@@ -31,9 +31,9 @@
       "id": "4",
       "name": "Car Maintenance",
       "targetAmount": 30000,
-      "savedAmount": 13800,
+      "savedAmount": 14800,
       "category": "Vehicle",
-      "deadline": "2025-09-15",
+      "deadline": "2025-12-24",
       "createdAt": "2024-06-01"
     },
     {

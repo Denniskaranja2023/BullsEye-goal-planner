@@ -28,7 +28,6 @@ function EditGoal() {
     ...formData,
     [event.target.name]: event.target.value
    })
-   console.log("Form Data:", formData);
   }
 
   function handleSubmit(event) {
@@ -40,7 +39,7 @@ function EditGoal() {
       category: formData.category || goal.category,
       deadline: formData.deadline || goal.deadline
     };
-    console.log("Updated Goal:", updatedGoal);
+    
     fetch(`http://localhost:3001/goals/${goalId}`, {
       method: "PATCH",
       headers: {

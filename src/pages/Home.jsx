@@ -65,8 +65,8 @@ function Home() {
     <div>
       <header >
         <NavBar />
-      </header>
-      <h2 style={{textAlign:"center"}}>Welcome to BullsEye goal-planner</h2><hr/>
+      </header> <hr/>
+      <h2 style={{textAlign:"center", display:"flex", alignItems: "center", justifyContent: "center"}}>Welcome to  <span style={{color:" rgba(255, 30, 0, 0.685)", marginLeft: "5px"}}>   Bulls</span>Eye goal-planner<img src="https://as1.ftcdn.net/jpg/05/00/59/60/1000_F_500596018_Zku9HitjzpoJuEB6w5klGMySgi7jQO72.jpg" style={{height:"40px", width:"40px", borderRadius:'50%'}}/></h2><hr/>
       <NewSavingsForm goals={goals} onSelected={setSelectedGoal} onSavingsAdded={setSavings} onSubmitSavings={handleSubmitSavings}/> <br/> <hr/>
         <h2 style={{textAlign:"center"}}>Your Goals</h2>
         <div className="goal-list">

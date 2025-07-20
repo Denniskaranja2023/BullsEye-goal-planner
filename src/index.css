@@ -59,6 +59,7 @@
   font-size: medium;
   border-radius: 15px;
   border: 1px solid red;
+  margin-bottom: 20px;
 }
 .form{
   display: flex;
