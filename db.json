@@ -4,7 +4,7 @@
       "id": "1",
       "name": "Japan-Holiday",
       "targetAmount": 60000,
-      "savedAmount": 41400,
+      "savedAmount": 42400,
       "category": "Travel",
       "deadline": "2025-12-31",
       "createdAt": "2024-01-15"
@@ -21,8 +21,8 @@
     {
       "id": "3",
       "name": "New Laptop",
-      "targetAmount": 25000,
-      "savedAmount": 20269,
+      "targetAmount": "40000",
+      "savedAmount": 25000,
       "category": "Electronics",
       "deadline": "2024-07-20",
       "createdAt": "2024-03-10"
@@ -31,7 +31,7 @@
       "id": "4",
       "name": "Car Maintenance",
       "targetAmount": 30000,
-      "savedAmount": 14800,
+      "savedAmount": 30000,
       "category": "Vehicle",
       "deadline": "2025-12-24",
       "createdAt": "2024-06-01"
@@ -40,7 +40,7 @@
       "id": "5",
       "name": "Holiday Gifts",
       "targetAmount": 5000,
-      "savedAmount": 2289,
+      "savedAmount": 3289,
       "category": "Shopping",
       "deadline": "2025-12-10",
       "createdAt": "2024-07-01"
@@ -49,10 +49,19 @@
       "id": "6",
       "name": "Home Renovation",
       "targetAmount": 60000,
-      "savedAmount": 7381,
+      "savedAmount": 9381,
       "category": "Home",
       "deadline": "2025-03-31",
       "createdAt": "2024-05-15"
+    },
+    {
+      "id": "2c81",
+      "name": "Masters-Fund",
+      "targetAmount": 40000,
+      "savedAmount": 25000,
+      "category": "education",
+      "deadline": "2025-08-05",
+      "createdAt": "2025-07-20"
     }
   ]
 }

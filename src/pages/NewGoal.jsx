@@ -14,7 +14,7 @@ function NewGoal() {
   savedAmount: "",
   category: "",
   deadline: "",
-  createdAt: new Date().toISOString()
+  createdAt: new Date().toISOString().split('T')[0]
 });
 
 function handleChange(event) {
@@ -47,8 +47,9 @@ function handleSubmit(event) {
     savedAmount: "",
     category: "",
     deadline: "",
-    createdAt: new Date().toISOString()
-  }))
+    createdAt: new Date().toISOString().split('T')[0]
+  })
+)
   .catch((error)=> console.error("Error adding new goal: ",error))
 }
 
