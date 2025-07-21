@@ -1,7 +1,0 @@
-/home              /                      301
-/addgoal           /newgoal               301
-/track/:id        /progress/:id          301
-/update/:id       /editgoal/:id          301
-/summary          /overview              301
-
-/*                /index.html            200

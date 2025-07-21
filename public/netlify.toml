@@ -1,0 +1,29 @@
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/addgoal"
+  to = "/newgoal"
+  status = 301
+
+[[redirects]]
+  from = "/track/:id"
+  to = "/progress/:id"
+  status = 301
+
+[[redirects]]
+  from = "/update/:id"
+  to = "/editgoal/:id"
+  status = 301
+
+[[redirects]]
+  from = "/summary"
+  to = "/overview"
+  status = 301
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
