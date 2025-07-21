@@ -4,7 +4,7 @@ import "../index.css";
 import SummaryItem from "../components/SummaryItem";
 
 function Overview() {
-  const baseURL = "http://localhost:3001/goals";
+  const baseURL = "https://bulls-eye-json-server-3.onrender.com/goals";
   const [goals, setGoals] = useState([]);
 
   useEffect(() => {

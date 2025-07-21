@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import "../index.css";
 
 function TrackProgress() {
-  const baseURL = "http://localhost:3001/goals";
+  const baseURL = "https://bulls-eye-json-server-3.onrender.com/goals";
   const params = useParams();
 
   const goalId = params.id;

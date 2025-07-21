@@ -8,7 +8,7 @@ function Home() {
  const[goals, setGoals] = useState([]);
  const[selectedGoal, setSelectedGoal] = useState("");
  const[savings, setSavings] = useState(0);
- const baseURL = "http://localhost:3001/goals";
+ const baseURL ="https://bulls-eye-json-server-3.onrender.com/goals";
     useEffect(() => {
         fetch(`${baseURL}`)
         .then((response) => response.json())
