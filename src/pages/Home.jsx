@@ -8,9 +8,9 @@ function Home() {
  const[goals, setGoals] = useState([]);
  const[selectedGoal, setSelectedGoal] = useState("");
  const[savings, setSavings] = useState(0);
-   
+ const baseURL = "http://localhost:3001/goals";
     useEffect(() => {
-        fetch("http://localhost:3001/goals")
+        fetch(`${baseURL}`)
         .then((response) => response.json())
         .then((data) => setGoals(data));
     }, []);
@@ -25,7 +25,7 @@ function Home() {
 
    const newSavings= (goalOfInterest.savedAmount) + parseInt(savings);
    console.log("New Savings:", newSavings);
-    fetch(`http://localhost:3001/goals/${goalOfInterest.id}`, {
+    fetch(`${baseURL}/${goalOfInterest.id}`, {
       method: "PATCH",
         headers: {
             "Content-Type": "application/json",
@@ -53,7 +53,7 @@ function Home() {
     if (!confirmMessage) return;
 
     const goalId = event.target.id;
-    fetch(`http://localhost:3001/goals/${goalId}`,{
+    fetch(`${baseURL}/${goalId}`,{
       method: "DELETE",
     }).then(()=>{
       const updatedGoals= goals.filter((goal)=> goal.id !== goalId);

@@ -4,11 +4,11 @@ import "../index.css";
 import SummaryItem from "../components/SummaryItem";
 
 function Overview() {
-
+  const baseURL = "http://localhost:3001/goals";
   const [goals, setGoals] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/goals")
+    fetch(`${baseURL}`)
       .then((response) => response.json())
       .then((data) => setGoals(data))
       .catch((error) => console.error("Error fetching goals:", error));

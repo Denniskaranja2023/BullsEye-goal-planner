@@ -4,6 +4,7 @@ import "../index.css";
 import { useParams } from "react-router-dom";
 
 function EditGoal() {
+  const baseURL = "http://localhost:3001/goals";
  const params = useParams();
   const goalId = params.id;
   const [goal, setGoal] = useState({});
@@ -16,7 +17,7 @@ function EditGoal() {
   })
 
   useEffect(()=>{
-    fetch(`http://localhost:3001/goals/${goalId}`)
+    fetch(`${baseURL}/${goalId}`)
       .then((response) => response.json())
       .then((data) => setGoal(data))
       .catch((error) => console.error("Error fetching goal:", error));
@@ -40,7 +41,7 @@ function EditGoal() {
       deadline: formData.deadline || goal.deadline
     };
     
-    fetch(`http://localhost:3001/goals/${goalId}`, {
+    fetch(`${baseURL}/${goalId}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

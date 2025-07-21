@@ -4,13 +4,14 @@ import { useParams } from "react-router-dom";
 import "../index.css";
 
 function TrackProgress() {
+  const baseURL = "http://localhost:3001/goals";
   const params = useParams();
 
   const goalId = params.id;
   const [goal, setGoal] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:3001/goals/${goalId}`)
+    fetch(`${baseURL}/${goalId}`)
       .then((response) => response.json())
       .then((data) => setGoal(data))
       .catch((error) => console.error("Error fetching goal:", error));

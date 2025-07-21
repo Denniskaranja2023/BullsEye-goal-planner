@@ -7,7 +7,7 @@ import { useState } from "react";
 
 
 function NewGoal() {
-
+  const baseURL = "http://localhost:3001/goals";
   const [formData, setFormData] = useState({
   name: "",
   targetAmount: "",
@@ -34,7 +34,7 @@ function handleSubmit(event) {
     deadline: formData.deadline,
     createdAt: formData.createdAt
   }
-  fetch("http://localhost:3001/goals", {
+  fetch(`${baseURL}`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
