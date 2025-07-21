@@ -25,7 +25,7 @@ The overview page allows a user to see all added goals in a summarized format. I
 To use this application, you will need a computer, tablet or phone and access to internet
 ### View Live site
 You may access the live site of this application 
-[here]()
+[here](https://bullseye-planner.netlify.app/)
 ### Installation process
 1. Clone this repository using 
 
